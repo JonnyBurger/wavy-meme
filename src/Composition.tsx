@@ -1,9 +1,12 @@
-import {staticFile, useCurrentFrame, Video} from 'remotion';
-import {AbsoluteFill} from 'remotion';
-import {useEffect} from 'react';
-import {useCallback} from 'react';
-import {useVideoConfig} from 'remotion';
-import {useRef} from 'react';
+import {useCallback, useEffect, useRef} from 'react';
+import {
+	AbsoluteFill,
+	Audio,
+	staticFile,
+	useCurrentFrame,
+	useVideoConfig,
+	Video,
+} from 'remotion';
 
 export const VideoOnCanvas: React.FC = () => {
 	const video = useRef<HTMLVideoElement>(null);
@@ -32,7 +35,7 @@ export const VideoOnCanvas: React.FC = () => {
 			const green = imageFrame.data[i + 1];
 			const blue = imageFrame.data[i + 2];
 
-			const moveLeft = Math.cos(row / 100 + frame / 10) * 80;
+			const moveLeft = Math.cos(row / 100 + frame / 10) * 60;
 			const indexShift = Math.floor(moveLeft) * 4;
 
 			data.data[i + indexShift] = red;
@@ -67,20 +70,21 @@ export const VideoOnCanvas: React.FC = () => {
 					ref={video}
 					// Hide the original video tag
 					style={{opacity: 0}}
-					startFrom={30}
-					src={staticFile('treadmill.mp4')}
+					startFrom={500}
+					src={staticFile('wavy.mp4')}
 				/>
 			</AbsoluteFill>
 			<AbsoluteFill>
 				<canvas
 					ref={canvas}
 					style={{
-						transform: `scale(1.3)`,
+						transform: `scale(1)`,
 					}}
 					width={width}
 					height={height}
 				/>
 			</AbsoluteFill>
+			<Audio src={staticFile('wavy.mp3')}></Audio>
 		</AbsoluteFill>
 	);
 };
