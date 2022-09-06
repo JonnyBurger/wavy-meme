@@ -1,10 +1,8 @@
-# Remotion video
+# React Wavy meme
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <img src="https://github.com/remotion-dev/logo/raw/main/withtitle/element-0.png">
-  </a>
-</p>
+https://user-images.githubusercontent.com/1629785/188683912-315f6582-d5b0-4231-a626-6665221b8b6d.mp4
+
+
 
 Welcome to your Remotion project!
 
