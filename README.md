@@ -2,8 +2,6 @@
 
 https://user-images.githubusercontent.com/1629785/188683912-315f6582-d5b0-4231-a626-6665221b8b6d.mp4
 
-
-
 Welcome to your Remotion project!
 
 ## Commands
@@ -46,4 +44,4 @@ Found an issue with Remotion? [File an issue here](https://github.com/remotion-d
 
 ## License
 
-Notice that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Note that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).

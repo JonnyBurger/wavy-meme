@@ -84,7 +84,7 @@ export const VideoOnCanvas: React.FC = () => {
 					height={height}
 				/>
 			</AbsoluteFill>
-			<Audio src={staticFile('wavy.mp3')}></Audio>
+			<Audio src={staticFile('wavy.mp3')} />
 		</AbsoluteFill>
 	);
 };
